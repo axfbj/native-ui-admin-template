@@ -5,8 +5,8 @@ import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import InputNumber from './components/InputNumber.vue'
 const number = ref(0)
-const handlerClick = (number: number) => {
-  number++
+const handlerClick = () => {
+  number.value++
 }
 </script>
 
@@ -14,10 +14,10 @@ const handlerClick = (number: number) => {
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
   <InputNumber />
-  <n-button @click="handlerClick(number)"> Default </n-button>
+  <n-button @click="handlerClick">{{ number }}</n-button>
   <n-button type="primary"> Primary </n-button>
   <n-button type="info"> Info </n-button>
-  <n-button type="success"> Success </n-button>
+  <n-button type="success"> </n-button>
   <n-button type="warning"> Warning </n-button>
   <n-button type="error"> Error </n-button>
 </template>
