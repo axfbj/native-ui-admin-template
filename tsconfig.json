@@ -9,12 +9,17 @@
     "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
-    "isolatedModules": false, // 空文件报错
+    "isolatedModules": false, // 空.ts文件报错
     "esModuleInterop": true,
     "importHelpers": true,
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "skipLibCheck": true,
-    "types": ["naive-ui/volar"]
+    "types": [
+      "naive-ui/volar"
+    ]
   },
   "paths": {
     "@/*": [
@@ -22,7 +27,11 @@
     ]
   },
   // "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
