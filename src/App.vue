@@ -4,6 +4,7 @@
 import { ref } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import InputNumber from './components/InputNumber.vue'
+import EnvCard from './components/EnvCard.vue'
 const number = ref(0)
 const handlerClick = () => {
   number.value++
@@ -14,6 +15,7 @@ const handlerClick = () => {
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
   <InputNumber />
+  <EnvCard />
   <n-button @click="handlerClick">Default: {{ number }}</n-button>
   <n-button type="primary"> Primary </n-button>
   <n-button type="info"> Info </n-button>

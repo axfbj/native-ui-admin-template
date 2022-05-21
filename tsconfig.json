@@ -18,6 +18,7 @@
     ],
     "skipLibCheck": true,
     "types": [
+      "vite/client",
       "naive-ui/volar"
     ]
   },
